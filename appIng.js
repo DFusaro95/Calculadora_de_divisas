@@ -1,14 +1,14 @@
 function calDolar(){
-    let dolar = document.getElementById("dolar");
-    let num = document.getElementById("peso2");
+    let dolar = document.getElementById("dolar_input").value;
+    let num = document.getElementById("peso2").value;
     let resultado = num / dolar;
     resultado = resultado.toFixed(2);
     let mensaje = `tienes un saldo de $${resultado} dolares en pesos`;
-    alert(mensaje);
+    console.log(mensaje);
     return mensaje;
 }
 function calEuro(){
-    let euro = document.getElementById("euro");
+    let euro = document.getElementById("euro_input");
     let num = document.getElementById("peso1");
     let resultado = num / euro;
     resultado = resultado.toFixed(2);
@@ -16,3 +16,5 @@ function calEuro(){
     alert(mensaje);
     return mensaje;
 }
+
+

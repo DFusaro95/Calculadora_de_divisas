@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de divisas</title>
     <link rel="stylesheet" href="appIng.css">
-   
-
 </head>
 <body>
    <header> 
@@ -17,67 +15,69 @@
       <a href="">Contact us</a>
 </nav>
     </header>
-<main><section class="options">
-    <div id="euro">
-        <div>
-            <h2>Euro Blue</h2>
-            <img src="Euro.jpg" alt="" id="euroImg">
-        </div>
-        <div>
-            <p>El valor del euro blue tiene una diferencia sustancial más alta con el euro oficial ya que este último es el que se adquiere en los bancos y que posee una cotización establecida</p> 
-            <label for="euro">Ingrese valor del dolar:</label><input id="euro" type="number"><br>
-            <label for="peso1">Ingrese cantidad de pesos:</label><input id="peso1" type="number"><br>
-            <button onclick="calEuro()">Calcular</button>
-            <p id="result1"></p>
-        </div>
-    </div>
-    <div id="dolar">
-        <div>
-            <h2>Dolar Blue</h2>
-            <img src="Dolar.jpg" alt="" id="dolarImg">
-        </div>
-        <div>
-            <p>Los argentinos usan "el blue" como principal referencia del dólar, ya que es el que sigue la lógica de la oferta y demanda. Cuando uno compra o vende una casa, un auto, o algo de mucho valor, como una computadora o celular, se utiliza esta cotización.</p>
-            <label for="dolar">Ingrese valor del dolar:</label><input id="dolar" type="number"><br>
-            <label for="peso2">Ingrese cantidad de pesos:</label><input id="peso2" type="number"><br>
-            <button onclick="calDolar()">Calcular</button>
-            <p id="result2"></p>
-        </div>
-       
-    </div>
-</section>
-<h3>Conversiones mas comunes:</h3>
-<section class="table">
-    <table border="1"> 
-    <tr align="center" style="background-color: gray;">
-        <th>Cantidad</th>
-        <th>1</th>
-        <th>10</th>
-        <th>25</th>
-        <th>50</th>
-        <th>100</th>
-        <th>100</th>
-    </tr>
-    <tr align="center" style="background-color:white;">
-        <th>Dolar a Peso</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-    <tr align="center"style="background-color:white;">
-        <th>Euro a Peso</th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-    </tr>
-</section>
-</table> 
+<main>
+    <section class="options">
+        <section id="euro" class="euro_container">
+            <div class="euro-title_container">
+                <h2 class="euro_title">Euro Blue</h2>
+                <img src="Euro.jpg" alt="" id="euroImg" class="euro_img"> 
+            </div>
+            <article class="euro_article">
+                <p class="euro_p">El valor del euro blue tiene una diferencia sustancial más alta con el euro oficial ya que este último es el que se adquiere en los bancos y que posee una cotización establecida</p> 
+                <div class="input_container">
+                    <label for="euro">Ingrese valor del dolar:</label><input id="euro_input" type="number" ><br>
+                    <label for="peso1">Ingrese cantidad de pesos:</label><input id="peso1" type="number"><br>
+                    <button onclick="calEuro()">Calcular</button>
+                </div>
+                <p id="result1"></p> 
+            </article>
+        </section>
+        <section id="dolar" class="dolar_container">
+            <div>
+                <h2>Dolar Blue</h2>
+                <img src="Dolar.jpg" alt="" id="dolarImg"
+            </div>
+            <article>
+                <p>Los argentinos usan "el blue" como principal referencia del dólar, ya que es el que sigue la lógica de la oferta y demanda. Cuando uno compra o vende una casa, un auto, o algo de mucho valor, como una computadora o celular, se utiliza esta cotización.</p>
+                <label for="dolar">Ingrese valor del dolar:</label><input id="dolar_input" type="number"><br>
+                <label for="peso2">Ingrese cantidad de pesos:</label><input id="peso2" type="number"><br>
+                <button onclick="calDolar()">Calcular</button>
+                <p id="result2"></p>
+            </article>
+        </section>
+    </section>
+    <h3>Conversiones mas comunes:</h3>
+    <section class="table">
+        <table border="1"> 
+            <tr align="center" style="background-color: gray;">
+                <th>Cantidad</th>
+                <th>1</th>
+                <th>10</th>
+                <th>25</th>
+                <th>50</th>
+                <th>100</th>
+                <th>100</th>
+            </tr>
+            <tr align="center" style="background-color:white;">
+                <th>Dolar a Peso</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr align="center"style="background-color:white;">
+                <th>Euro a Peso</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </table> 
+    </section>
 </main>
 <footer>
     <hr>

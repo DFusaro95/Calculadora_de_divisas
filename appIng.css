@@ -33,34 +33,59 @@ header {
         padding: 1%;
         flex-direction: column;
     }
-.options img{
-    margin: 10px 10px 10px 10px;
-    width: 250px;
+.euro_img{
+    margin: 5px;
+    max-width: 250px;
     height: 250px;
     border-radius: 15px;
-}
-.options div{
-    display: flex;
-    border: 20px #4b718d solid;
-    text-align: center;
-    background-color: #a3cef1;
-    justify-content: center;
-    flex-direction: row;
-    
 }
 .options #dolar{
     flex-direction: row-reverse;
 }
- #dolar div{
+.dolar_container div{
     display: block;
     flex-direction: column;
     justify-content: center;
  }
- #euro div{
-    display: block;
+.euro_container{
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background-color: #5d83b9;
+    justify-content: center;
+    flex-direction: row;
+    gap: 15px;
+ }
+.euro-title_container{
+    display: flex;
+    box-shadow: 3px 3px 5px black;
+    text-align: center;
+    background-color: #a3cef1;
+    justify-content: center;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.euro_article{
+    background-color: #a3cef1;
+    box-shadow: 3px 3px 5px black;
+}
+.euro_p{
+    text-align: center;
+    padding: 10px;
+}
+.input_container{
+    display: flex;
     flex-direction: column;
     justify-content: center;
- }
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+
+
 
 
 .navbar a{
@@ -70,7 +95,6 @@ header {
     transition: all 200ms ease-in-out;
     justify-content: space-around;
 }
-
 .navbar a:hover {
     background-color: #a4c3c396;
 }
